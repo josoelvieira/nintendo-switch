@@ -46,14 +46,29 @@ ul {
     display: grid;
     grid-template-rows: 30px 80px 100px 30px;
     align-items: center;
+    transition: 0.3s;
+    animation: cimabaixo 0.5s ease-out;
+    position: relative;
 }
-
+@keyframes cimabaixo{
+    0%{
+        top: -100%;
+    }
+    50%{
+        top: -50%;
+    }
+    100%{
+        top: 0;
+    }
+}
 .controle-d {
     border: 3px solid black;
     border-radius: 0 40px 40px 0;
     background-color: #ff5c51;
     display: grid;
     grid-template-rows: 30px 100px 80px 30px;
+    animation: cimabaixo 0.5s ease-out;
+    position: relative;
 }
 
 .borda {
